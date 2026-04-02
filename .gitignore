@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production
+/build
+/dist
+/out
+/.next
+/coverage
+
+# Backend
+backend/src/database/db.sqlite
+backend/src/database/db.sqlite-shm
+backend/src/database/db.sqlite-wal
+
+# Frontend
+frontend/build
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Mobile (React Native + Expo)
+mobile/.expo/
+mobile/.expo-shared/
+mobile/dist/
+mobile/.env
+mobile/.env.local
+$RECYCLE.BIN/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.example
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing
+/.nyc_output
+/coverage
+
+# Misc
+.cache/
+*.log
+.pem
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+#lock.json
+/frontend/package-lock.json
+/backend/package-lock.json

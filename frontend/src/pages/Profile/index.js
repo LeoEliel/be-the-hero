@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -14,7 +14,7 @@ export default function Profile() {
     const ongId = localStorage.getItem('ongId');
     const ongName = localStorage.getItem('ongName');
 
-    const history = useHistory();
+    const navigate = useNavigate();
     useEffect(() => {
         api.get('profile', {
             headers: {
@@ -37,7 +37,7 @@ export default function Profile() {
     // Fira Code - Font Ligatures
     function handleLogout() {
         localStorage.clear();
-        history.push('/');
+        navigate('/');
     }
     return (
         <div className="profile-container">
